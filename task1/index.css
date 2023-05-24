@@ -1,0 +1,152 @@
+body{
+    width: 100%;
+    min-height:700px ;
+    background: lightcyan;
+    margin:0;
+}
+section{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+
+    background-color:#E3CFCF;
+
+}
+
+.img-wrapper{
+    width: 100%;
+    height: auto;
+    line-height: 0;
+}
+.img-wrapper img{
+    width: 100%;
+    height: auto;
+}
+
+.text-wrapper{
+    padding:0 16px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.text-wrapper h3{
+    font-style: normal;
+    font-weight: 275;
+    font-size: 24px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom:0;
+}
+.text-wrapper p{
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 24px;
+    
+}
+.text-wrapper button{
+    box-sizing: border-box;
+    background-color: transparent;
+    border:1px solid black;
+    padding: 16px;
+    font-weight: bold;
+    width: 110px;
+    height: 48px;
+    cursor: pointer;
+    margin-bottom:64px;
+}
+#learnMore{
+    max-height: 0;
+    color: transparent;
+    overflow: hidden;
+    transition: max-height .5s ease-out,color 1s;
+}
+#learnMore.open {
+    max-height:15rem;
+    color:black;
+}
+@media screen and (min-width:800px){
+    section{
+        flex-direction: row;
+        
+    }
+    .img-wrapper,.text-wrapper{
+        width: 50%;
+        height: auto;
+    }
+    .text-wrapper{
+        justify-content: start;
+        align-items: center;
+        padding: 0 .4rem;
+        margin-top:16px
+    }
+    .text-wrapper h3,.text-wrapper p{
+        line-height: 1;
+        margin:8px 0;
+    }
+    .text-wrapper p{
+        font-size: 14px;
+    }
+    .text-wrapper button{
+        margin:16px;
+    }
+    
+}
+
+
+@media screen and (min-width:920px){
+    .text-wrapper{
+        padding: 0rem;
+        
+    }
+    .text-wrapper p{
+        font-size: 16px;
+    }
+    .text-wrapper h3,.text-wrapper p{
+        line-height: 1;
+        margin:.5rem;
+    }
+    
+}
+
+@media screen and (min-width:1150px) {
+    .text-wrapper{
+        height: auto;
+        margin-top:32px;
+        gap:16px
+    }
+    
+    .text-wrapper h3{
+        font-size: 32px;
+    }
+    .text-wrapper h3,.text-wrapper p{
+        width: 71%;
+        line-height: 130%;
+        margin:0;
+    }
+    
+    
+}
+@media screen and (min-width:1420px) {
+    .text-wrapper{
+        height: auto;
+        margin-top:120px;
+    }
+    
+    .text-wrapper h3{
+        font-size: 32px;
+    }
+    .text-wrapper p{
+        font-size: 18px;
+    }
+    .text-wrapper h3,.text-wrapper p{
+        width: 71%;
+        line-height: 130%;
+        margin:0;
+    }
+    
+    
+}
